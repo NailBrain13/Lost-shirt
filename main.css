@@ -10,6 +10,10 @@ html,
 body {
 	height: 100%;
 }
+.wrapper {
+  overflow: hidden;
+  min-width: 1310px;
+}
 
 body {
 	font: 16px / 1.42em "Roboto", Arial, sans-serif;
@@ -18,11 +22,21 @@ body {
 	-moz-osx-font-smoozing: grayscale;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul>li {
+  list-style: none;
+}
+
 .hero-header {
 	position: relative;
 	height: 100vh;
 	min-height: 650px;
 	background: url("./images/bg/hero.jpg") center center / cover no-repeat;
+  margin-bottom: 130px;
 }
 
 .header {
@@ -105,4 +119,39 @@ body {
 
 .lined-text__word:nth-child(even) {
 	margin-left: 8px;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+
+.filter__item {
+  margin-right: 40px;
+}
+
+.filter__item:last-child {
+  margin-right: 0;
+}
+
+.filter__link {
+  font-family: 'Yanone Kaffeesatz', Arial, sans-serif;
+  text-transform: uppercase;
+  padding:5px 22px;
+  color: #1b1b1b;
+  font-size: 21px;
+  font-weight: bold;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.filter__link:hover {
+  color: #d82727;
+}
+
+.filter__item--active .filter__link {
+  color: #ffc92f;
+  background-color: #1b1b1b;
 }
