@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz:400,700&amp;subset=cyrillic" rel="stylesheet" />
   <link rel="stylesheet" href="main.css" />
-  <title>Home page</title>
+  <title>Lost Shirt: Main Page</title>
 </head>
 
 <body>
@@ -42,6 +42,49 @@
           </div>
         </div>
       </div>
+
+      <aside class="sidebar sidebar--opened">
+        <a href="#!" class="sidebar__hamburger">
+          <svg class="sidebar__hamburger-icon">
+            <use xlink:href="./images/icons-sprite.svg#bars"></use>
+          </svg>
+        </a>
+        <div class="sidebar__header">
+          <a href="#!" class="logo">
+            <img src="./images/content/logos/logo-main.png" alt="logo" class="logo__image" />
+          </a>
+          <a href="#" class="sidebar__close">
+            <svg class="sidebar__close-icon">
+              <use xlink:href="./images/icons-sprite.svg#cross"></use>
+            </svg>
+          </a>
+        </div>
+        <nav class="side-menu sidebar__menu">
+          <ul class="side-menu__list">
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Детская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Мужская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Женская коллекция</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Популярные принты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Новые принты</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Специальные предложения</a>
+            </li>
+            <li class="side-menu__item">
+              <a href="#" class="side-menu__link">Скоро в продаже</a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
     </section>
 
     <section class="hero">
@@ -267,7 +310,8 @@
         <section class="extras">
           <div class="extras__col">
             <a href="#!" class="extras__best">
-              Лучшие принты <br> 2019 года
+              Лучшие принты <br />
+              2019 года
             </a>
           </div>
 
@@ -309,6 +353,8 @@
       </div>
     </footer>
   </div>
+
+  <script src="./scripts/sidebar-menu.js"></script>
 </body>
 
 </html>
