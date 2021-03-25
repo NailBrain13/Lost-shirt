@@ -316,7 +316,7 @@ ul>li {
   margin-bottom: 160px;
 }
 
-.product__list {
+.products__list {
   display: flex;
   flex-wrap: wrap;
   margin-left: -27px;
